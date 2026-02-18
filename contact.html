@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio · Contact</title>
+  <script>(function(){try{var s=localStorage.getItem('theme');var t=s?s:(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="theme.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <a href="index.html" class="logo">THULASIMANIKANDAN M</a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" class="btn theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container stack-24">
+      <section class="section stack-24">
+        <div class="center">
+          <h1>Get In Touch</h1>
+          <p class="lead muted">I’d love to hear from you. Share details about your project and I’ll reply within 24 hours.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="section stack-16">
+            <h3>Send a Message</h3>
+            <form class="form" action="#" method="POST">
+              <div>
+                <label for="name" class="label">Full Name *</label>
+                <input class="input" id="name" name="name" type="text" required minlength="2" maxlength="50" placeholder="Your full name" />
+              </div>
+              <div>
+                <label for="phone" class="label">Contact Number *</label>
+                <input class="input" id="phone" name="phone" type="tel" required pattern="[0-9]{10,15}" title="Please enter 10-15 digits" placeholder="1234567890" />
+              </div>
+              <div>
+                <label for="email" class="label">Email Address *</label>
+                <input class="input" id="email" name="email" type="email" required placeholder="you@example.com" />
+              </div>
+              <div>
+                <label for="subject" class="label">Subject</label>
+                <input class="input" id="subject" name="subject" type="text" maxlength="100" placeholder="Optional subject" />
+              </div>
+              <div>
+                <label for="message" class="label">Message *</label>
+                <textarea class="textarea" id="message" name="message" required minlength="10" maxlength="1000" placeholder="Tell me about your project, timeline, or anything else..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%">Send Message</button>
+            </form>
+          </div>
+
+          <aside class="section stack-16">
+            <h3>Let’s Connect</h3>
+            <p class="muted">I’m always excited to discuss new projects and opportunities. Here are the best ways to reach me:</p>
+
+            <div class="card">
+              <strong>Email</strong>
+              <p class="muted">thulasitmk181@gmail.com</p>
+            </div>
+            <div class="card">
+              <strong>Phone</strong>
+              <p class="muted">+91 7305371881</p>
+            </div>
+            <div class="card">
+              <strong>Location</strong>
+              <p class="muted">5/192B Dharapuram, Tirupur, Tamilnadu 638657</p>
+            </div>
+            <div class="card">
+              <strong>Response Time</strong>
+              <p class="muted">Usually within 24 hours</p>
+            </div>
+
+            <div class="divider"></div>
+            <div class="footer-links">
+              <a href="#">💼 LinkedIn</a>
+              <a href="#">🐙 GitHub</a>
+              <a href="#">🐦 Twitter</a>
+              <a href="#">📷 Instagram</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-wrap">
+      <p class="muted">© 2025 All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#" title="Email">📧</a>
+        <a href="#" title="LinkedIn">💼</a>
+        <a href="#" title="GitHub">🐙</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
