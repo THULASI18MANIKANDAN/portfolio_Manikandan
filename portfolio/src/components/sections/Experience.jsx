@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { portfolioData } from '../../data/portfolio-data';
 import { FileText, X } from 'lucide-react';
 import FadeIn from '../animations/FadeIn';
+import { resolvePath } from '../../utils/image-utils';
 import './Experience.css';
 
 const Experience = () => {
@@ -23,7 +24,7 @@ const Experience = () => {
                     {job.certificate && (
                       <button
                         className="view-cert-btn"
-                        onClick={() => setSelectedImage(job.certificate)}
+                        onClick={() => setSelectedImage(resolvePath(job.certificate))}
                         title="View Certificate"
                       >
                         <FileText size={16} /> Certificate

@@ -1,6 +1,7 @@
 import React from 'react';
 import { portfolioData } from '../../data/portfolio-data';
 import FadeIn from '../animations/FadeIn';
+import { resolvePath } from '../../utils/image-utils';
 import './Projects.css';
 
 const Projects = () => {
@@ -16,7 +17,7 @@ const Projects = () => {
                             <div className="project-card card">
                                 {project.image && (
                                     <div className="project-image-container">
-                                        <img src={project.image} alt={project.title} className="project-image" />
+                                        <img src={resolvePath(project.image)} alt={project.title} className="project-image" />
                                     </div>
                                 )}
                                 <div className="project-content">

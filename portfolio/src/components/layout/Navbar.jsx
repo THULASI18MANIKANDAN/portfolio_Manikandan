@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { resolvePath } from '../../utils/image-utils';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -50,7 +51,7 @@ const Navbar = () => {
                         </li>
                     ))}
                     <li className="nav-item">
-                        <a href="/resume.pdf" className="nav-btn" download="Resume.pdf" onClick={() => setIsOpen(false)}>
+                        <a href={resolvePath("/resume.pdf")} className="nav-btn" download="Resume.pdf" onClick={() => setIsOpen(false)}>
                             Resume
                         </a>
                     </li>
