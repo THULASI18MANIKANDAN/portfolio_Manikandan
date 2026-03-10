@@ -78,14 +78,18 @@
 }
 
 .nav-btn {
-    display: inline-block;
-    padding: 0.5rem 1.25rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 1.5rem;
     background-color: var(--primary-color);
     color: white;
     border-radius: 999px;
     font-weight: 500;
     transition: all 0.3s ease;
     margin-left: 1rem;
+    line-height: 1;
+    text-decoration: none;
 }
 
 .nav-btn:hover {

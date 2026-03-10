@@ -17,7 +17,7 @@ const Projects = () => {
                             <div className="project-card card">
                                 {project.image && (
                                     <div className="project-image-container">
-                                        <img src={resolvePath(project.image)} alt={project.title} className="project-image" />
+                                        <img src={resolvePath(project.image)} alt={project.title} className="project-image" loading="lazy" />
                                     </div>
                                 )}
                                 <div className="project-content">

@@ -65,10 +65,10 @@ const Experience = () => {
       {/* Image Modal */}
       {selectedImage && (
         <div className="cert-modal" onClick={() => setSelectedImage(null)}>
+          <button className="cert-close-btn" onClick={(e) => { e.stopPropagation(); setSelectedImage(null); }}>
+            <X size={28} />
+          </button>
           <div className="cert-modal-content" onClick={e => e.stopPropagation()}>
-            <button className="cert-close-btn" onClick={() => setSelectedImage(null)}>
-              <X size={24} />
-            </button>
             <img src={selectedImage} alt="Certificate" className="cert-image" />
           </div>
         </div>

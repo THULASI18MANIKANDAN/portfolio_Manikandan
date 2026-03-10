@@ -33,6 +33,9 @@
     height: 100%;
     object-fit: contain;
     transition: transform 0.3s ease;
+    will-change: transform;
+    backface-visibility: hidden;
+    transform: translateZ(0);
 }
 
 .project-card:hover .project-image {
