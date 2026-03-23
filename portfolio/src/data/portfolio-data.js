@@ -4,6 +4,7 @@ export const portfolioData = {
         phone: "+91 7305371881",
         email: "thulasitmk181@gmail.com",
         location: "Dharapuram, Tirupur",
+        image: "/profile.jpg",
         links: {
             linkedin: "https://www.linkedin.com/in/thulasimanikandan-m-508556292",
             github: "https://github.com/THULASI18MANIKANDAN",

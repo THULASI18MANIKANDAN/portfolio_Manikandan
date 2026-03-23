@@ -13,7 +13,8 @@ const Hero = () => {
             <div className="container hero-container">
                 <FadeIn direction="up">
                     <div className="hero-content">
-                        <h1 className="hero-title">
+                        <div className="hero-text-content">
+                            <h1 className="hero-title">
                             Hi, I'm <span className="highlight">{personalInfo.name}</span>
                         </h1>
                         <h2 className="hero-subtitle">Full Stack Developer</h2>
@@ -38,6 +39,12 @@ const Hero = () => {
                             <a href={personalInfo.links.leetcode} target="_blank" rel="noopener noreferrer" aria-label="LeetCode">
                                 <LeetCodeIcon size={24} />
                             </a>
+                        </div>
+                        </div>
+                        <div className="hero-image-content">
+                            {personalInfo.image && (
+                                <img src={personalInfo.image} alt={personalInfo.name} className="hero-profile-image" />
+                            )}
                         </div>
                     </div>
                 </FadeIn>
