@@ -3,6 +3,7 @@ import { portfolioData } from '../../data/portfolio-data';
 import { Github, Linkedin } from 'lucide-react';
 import LeetCodeIcon from '../icons/LeetCodeIcon';
 import FadeIn from '../animations/FadeIn';
+import { resolvePath } from '../../utils/image-utils';
 import './Hero.css';
 
 const Hero = () => {
@@ -43,7 +44,11 @@ const Hero = () => {
                         </div>
                         <div className="hero-image-content">
                             {personalInfo.image && (
-                                <img src={personalInfo.image} alt={personalInfo.name} className="hero-profile-image" />
+                                <img 
+                                    src={resolvePath(personalInfo.image)} 
+                                    alt={personalInfo.name} 
+                                    className="hero-profile-image" 
+                                />
                             )}
                         </div>
                     </div>
